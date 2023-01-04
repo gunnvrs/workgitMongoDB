@@ -41,7 +41,7 @@ exports.findById = (req, res) => {
     })
 }
 
-exports.findById = (req, res) => {
+exports.update = (req, res) => {
     customer.findByIdAndUpdate(req.params.customerId, {$set: req.body}, {new: true}).then(data=>{
         if(!data){
             return res.status(404).json({
@@ -56,7 +56,7 @@ exports.findById = (req, res) => {
     })
 }
 
-exports.findById = (req, res) => {
+exports.delete = (req, res) => {
     customer.findByIdAndDelete(req.params.customerId)
     .then(data=>{
         if(!data){
