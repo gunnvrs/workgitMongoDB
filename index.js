@@ -16,13 +16,7 @@ app.use(express.urlencoded({
 mongoose.Promise = global.Promise;
 mongoose.connect(dbConfig.url)
     .then(()=>{
-        Customer.deleteMany({},(err)=>{
-    if (err){
-        process.exit();
-            }
-            console.log('Remove collection of Customer')
-            initCustomer();
-        });
+        console.log("database connected!!!")
     }).catch(err=>{
         console.log('Cannot Connect to MongoDB')
         process.exit();

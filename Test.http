@@ -24,4 +24,4 @@ Content-Type: application/json
 
 ###
 
-DELETE http://localhost:3000/api/customer/63b50dd72b255e3ffa59ed17 HTTP/1.1
+DELETE http://localhost:3000/api/customer/63b50d572b255e3ffa59ed10 HTTP/1.1
